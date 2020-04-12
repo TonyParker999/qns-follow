@@ -34,12 +34,10 @@ public class AppTestController {
         map.put("package", "app");
         map.put("testUrl",url);
         List<Map<String, Object>> users = testService.getUsers(null);
-
-
-        User user = new User();
-        user.setId(1);
-        user.setName("tony-update");
-        testService.update(user);
+//        User user = new User();
+//        user.setId(1);
+//        user.setName("tony-update");
+//        testService.update(user);
         map.put("users",users);
         return map;
     }
